@@ -4,19 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "mocha app/**/*.spec.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^15.0.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "express-session": "^1.16.2",
     "helmet": "^3.18.0",
     "mongodb": "^3.2.7",
-    "mongoose": "^5.6.0"
+    "mongoose": "^5.6.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^12.0.8",

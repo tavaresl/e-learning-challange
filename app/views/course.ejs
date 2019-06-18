@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partial/head', { title: course.name }); %>
+
+  <body>
+    <%- include('partial/navbar', { user: user }); %>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><%= course.name %></h2>
+
+          <p class="card-text"><%= course.description %></p>
+          <p class="card-text">
+            <span class="text-muted">Duração:</span> <%= course.duration %> horas
+          </p>
+          <p class="card-text">
+            <span class="text-muted">Avaliação:</span> <%= course.rating %><span class="text-muted"> / 5</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
