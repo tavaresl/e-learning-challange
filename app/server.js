@@ -31,6 +31,8 @@ app.set('views', 'app/views');
 app.use('/courses', courseRouter(express.Router()));
 app.use('/users', userRouter(express.Router()));
 
+app.get('/', (req, res) => res.redirect('/courses'));
+
 const server = http.createServer(app);
 
 module.exports = server;
